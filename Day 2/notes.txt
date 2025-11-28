@@ -1,0 +1,129 @@
+Programming:
+            Machine Understandable language,
+            To give instruction to the computer,
+            Reduce human effort.
+
+console.log("Hello, World!");
+Task: Hi i'm name from location
+
+Variables
+
+values -> you can store different things!
+
+Example:
+var          toys          =    "remote car";
+ |            |                     |
+variable    variable name         value
+
+var toys = "remote control car";
+console.log(toys);
+
+// Task: Name
+
+var toys = "remote control car"; // String
+var noOfToys = 4; // Number
+console.log(toys, noOfToys);
+
+1. String
+2. Number
+
+Alert: Displays a message to the user in a dialog box with an OK button.
+Example:
+alert("Welcome to the website");
+
+Prompts: Displays a dialog box that asks the user for input.
+         It contains a text field and OK/Cancel button.
+Example:
+prompt("Enter your name!");
+
+Operators - Arithmetic & Logical:
+var a = 10;
+var b = 3;
+
+console.log(a + b); // Addition
+console.log(a - b); // Subtraction
+console.log(a * b); // Multiplication
+console.log(a / b); // Division
+console.log(a % b); // Modulus
+console.log(a ** b); // Exponentiation
+
+&&(Logical AND): Returns true if both operands are true.
+||(Logical OR): Returns true if at least one of the operands is true.
+!(Logical NOT): Inverts the value of a boolean expression.
+
+Example:
+var loggedIn = false;
+
+if (!loggedIn) {
+    console.log("Please Login!");
+}
+
+Boolean: True/False
+var age = 20;
+console.log(age>=18);
+
+== - only check values       
+=== - both values and types
+
+Example:
+var a = 0;    // true
+var b = "0"; // false
+console.log(a === b);
+
+if:
+Syntax:
+       if(condition){
+        // code to be executed if condition is true
+       } else {
+        // code to be executed if condition is false
+       }
+
+Example:
+var a = 3;
+
+if (a % 2 == 0) {
+  console.log("Even");
+} else {
+  console.log("Odd");
+}
+
+// Task: Voter ID - 18 -> Eligible to Vote / Not Eligible to Vote
+
+// Variables
+var name = "John";
+let age = 29;
+const country = "India";
+
+console.log("Name: " + name);
+console.log("Age: " + age);
+console.log("Country: " + country);
+
+Data Types:
+Primitive Data Types: String, Number, Boolean, Null, Undefined.
+Non-Primitive Data Types: Object, Array
+
+// Array - []
+let person = ["John", 36, "India"]
+console.log(person);
+
+// Object - {key: value}
+let car = {
+    wheel: 4,
+    color: "red",
+    milege: 50
+}
+
+console.log(car);
+console.log(car.wheel);
+
+// TASK: Resume: NAME, DOB, QUALIFICATION, SKILLS, EXPERIENCE
+
+Extension:
+Code Runner
+ES7+ React/Redux/React-Native snippet
+gitignore
+HTML CSS Support
+JavaScript (ES6) code snippets
+Live Server
+Material Icon Theme
+Prettier - Code formatter
