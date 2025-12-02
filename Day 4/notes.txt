@@ -1,0 +1,143 @@
+Hoisting: Hoisting is the process of moving a variable or function to the top of its scope.
+
+- Variable Hoisting.
+- Variable are hoisted to the top of their scope, but their vales are not
+
+Example:
+console.log(a); // undefined
+var a = 10;
+
+console.log(a); 
+let a = 10; // reference error: cannot access 'a' before initialization.
+
+Function Hoisting:
+Function declarations are fully hoisted,
+meaning both the function name and the function body are moved to the top of the scope.
+
+Example:
+welcome();
+function welcome() {
+    console.log("Welcome to Day 4!");
+}
+
+Array:
+let arr = [100, 200, 300, 400, 500];
+//          0    1    2    3    4
+console.log(arr[3]);
+console.log(arr.length);
+
+Push() & Pop(): Add or remove from the end of the array.
+let fruits = ["Apple", "Banana"];
+fruits.push("Cherry");
+console.log(fruits); // [ 'Apple', 'Banana', 'Cherry' ]
+
+Task: Pop()
+let fruits = ["apple", "banana"];
+fruits.pop();
+console.log(fruits);
+
+Shift() & unshift(): Add or remove elements from the beginning of the array.
+
+Unshift();
+Example:
+let fruits = ["apple", "banana"];
+fruits.unshift("orange", "mango");
+console.log(fruits);
+
+Task: Shift();
+let fruits = ["apple", "banana"];
+fruits.shift();
+console.log(fruits);
+
+slice() & splice(): Extract or modify parts of an array.
+
+Slice():
+Example:
+let arr = [100, 200, 300, 400, 500];
+//          0    1    2    3    4
+
+const reSlice = arr.slice(1, 4);
+console.log(reSlice);
+console.log(arr);
+
+splice(): Add, Remove, Modify.
+Example:
+let arr = [100, 200, 300, 400, 500];
+//          0    1    2    3    4
+
+const reSlice = arr.splice(2, 3, 33);
+// Syntax: array.splice(start, deleteCount, item1, item2, ...)
+console.log(arr);
+
+MRF - Map, Reduce, Filter.
+
+var arr = [1, 2, 3, 4, 5]
+var sum = [2, 4, 6, 8, 10]
+
+Step1: for loop
+Step2: arr[i]*2
+Step3: declare an empty and push
+Step4: return result
+
+Map():
+- it will take function as a parameter
+- it is applicable only for array.
+- it will be applied each and every element of an array.
+- it will return a new array.
+
+Syntax: arr.map(func name);
+
+Example:
+var arr = [12, 13, 14, 15];
+var res = arr.map((ele) => ele * 2);
+console.log(res);
+
+Task: 
+var arr = [{name:"john", age:34},{name:"doe", age:44}];
+increase: age +5
+Hint: Map, DOT Method
+
+2. Filter
+var arr = [1,2,3,4,5];
+var res = [2,4];
+
+Step1: for loop
+Step2: if condition arr[i]%2==0
+Step3: declare an empty array and push
+Step4: return result
+
+- Filter takes function as a parameter
+- it is applicable only for array
+- it will return a new array
+- if a certain condition is the function, is passed then it will be pushed
+- or it be ignored
+
+Example:
+var arr = [1, 2, 3, 4, 5];
+var res = arr.filter((ele) => ele % 2 === 0);
+console.log(res);
+
+Reduce:
+- Reduce function takes function as a parameter
+- it is applicable only for array.
+- it will return a single element
+- it will take sum of whole array.
+- it apply function on each and every element of an array.
+
+var arr = [12,13,14,15];
+
+1st Case:
+acc: accumulator it refers initial value
+ele: element it refers to element array.
+
+Example:
+var arr = [12,13,14,15];
+var res = arr.reduce((acc, ele)=>acc+ele);
+console.log(res);
+
+2nd Case: when initial value are given.
+
+Example:
+var arr = [12,13,14,15];
+var res = arr.reduce((acc, ele)=>acc+ele, 1);
+console.log(res);
