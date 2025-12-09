@@ -1,0 +1,160 @@
+CSS - Cascading Style Sheet
+Why: To add customized to the website
+
+Inline CSS:
+Example:
+<h1 style="color: brown;">CSS - Day 6</h1>
+style: attribute
+color: property
+brown: value
+
+Internal CSS:
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 - CSS</title>
+    <style>
+        p{
+          color: red;
+          font-size: 30px;
+          background-color: burlywood; 
+        }
+
+        h3{
+          color: blue;
+          font-size: 40px;
+          background-color: aquamarine; 
+        }
+
+    </style>
+</head>
+<body>
+    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, commodi.</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+</body>
+</html>
+
+External CSS:
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 - CSS</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, commodi.</span>
+    <span>Lorem ipsum dolor, sit amet consectetur adipisicing.</span>
+</body>
+</html>
+CSS:
+span{
+    color: blue;
+    font-size: 20px;
+    display: block;
+}
+
+Block Element:
+div, p, h1, ul, ol
+
+Inline Element:
+span, a, img, b
+
+Example:
+span{
+    color: blue;
+    font-size: 20px;
+    display: block;
+}
+
+Example:
+<div>B39</div>
+<span>B39</span>
+
+Selector:
+Class - .className
+id - #idName
+tag - <h3>
+
+Class Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 - CSS</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <h3 class="main">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, commodi.</h3>
+    <h3 class="main1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, commodi.</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+</body>
+</html>
+CSS:
+.main{
+    color: red;
+    font-size: 16px;
+}
+
+.main1{
+    color: blue;
+    font-size: 20px;
+    }
+
+Id Selector Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 - CSS</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <h3 id="main">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, commodi.</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+</body>
+</html>
+CSS:
+#main{
+    color: blue;
+    font-size: 20px;
+}
+
+Pseudo Classes: Link, Visited, Hover, Active.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 - CSS</title>
+    <style>
+        /* Unvisited Link */
+        a:link{
+            color: orange;
+        }
+        /* Visited Link */
+        a:visited{
+            color: green;
+        }
+        /* Active Link */
+        a:active{
+            color: red;
+        }
+        /* Hover Link */
+        a:hover{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p>Here are some links</p>
+    <a href="https://www.guvi.in/">Sample Link</a>
+</body>
+</html>
