@@ -1,0 +1,124 @@
+Box Model:
+it is box that wrapped around an every html element.
+it is consist of
+Margin, Padding, Border
+
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7 - CSS</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div>Welcome</div>
+</body>
+</html>
+CSS:
+div{
+    color: blue;
+    width: 250px;
+    height: 250px;
+    margin: 50px 20px   0px     0px;
+         /* top  right bottom   left */
+    background-color: red;
+    padding: 15px;
+    border: 5px dotted black;
+}
+
+Steps for Icons:
+Website link: https://fontawesome.com/icons
+CDN Link: https://cdnjs.com/libraries/font-awesome/6.7.0
+
+Icon Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7 - CSS</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
+<body>
+    <div>
+        <i class="fa-solid fa-circle-user"></i><br>
+        Welcome</div>
+</body>
+</html>
+
+Fonts Website Links: https://fonts.google.com/
+
+Example:
+CSS:
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+div{
+    color: blue;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+Position Properties:
+need: even though if you have top, left, bottom and right,
+      which can be used to place/align the element on the page.
+      1. Static
+      2. Relative
+      3. Absolute
+      4. Fixed
+      5. Sticky
+
+1.Static Example:
+<div class="main">Static</div>
+.main{
+    height: 150px;
+    width: 200px;
+    background-color: lightblue;
+    font-family: 'PT Sans', sans-serif;
+    position: static;
+    top: 50px;
+}
+
+2.Relative Example:
+<div class="main">Static</div>
+.main{
+    height: 150px;
+    width: 200px;
+    background-color: lightblue;
+    font-family: 'PT Sans', sans-serif;
+    position: relative;
+    top: 50px;
+    left: 150px;
+}
+
+3. Absolute Example:
+<div class="parent">
+    <div class="child">Absolute</div>
+</div>
+.parent {
+    height: 300px;
+    width: 300px;
+    background-color: lightgreen;
+    margin: 50px;
+    position: relative;
+}
+
+.child{
+    background-color: salmon;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+Task: Guvi Course
+
+Fixed: the element is positioned relative to the browser window.
+
+Sticky: the element os positioned on the user's scroll position
+        a sticky toggles between relative and fixed position when being scrolled.
+
+Example: https://positiondemo.netlify.app/
