@@ -1,0 +1,106 @@
+Day 8 - Flexbox
+
+Flexbox:
+- Flexible Box
+- One Dimensional layout
+
+Example: Flex, direction
+HTML:
+    <div>
+        <h1>A</h1>
+        <h1>b</h1>
+        <h1>c</h1>
+    </div>
+CSS:
+div{
+    background-color: darkcyan;
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+}
+
+Example: Flex Wrap
+HTML:
+    <div>
+        <h1>A</h1>
+        <h1>b</h1>
+        <h1>c</h1>
+    </div>
+div{
+    background-color: darkcyan;
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    flex-wrap: wrap;
+}
+
+h1{
+margin: 5px;
+padding: 10px;
+background-color: cornsilk;
+width: 100px;
+}
+
+Example: Justify Content
+HTML:
+    <div>
+        <h1>A</h1>
+        <h1>A</h1>
+        <h1>A</h1>
+        <h1>A</h1>
+    </div>
+
+CSS:
+div{
+    background-color: darkcyan;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    /* justify-content: start; */
+    /* justify-content: end; */
+    /* justify-content: space-between; */
+    justify-content: space-around;
+}
+
+h1{
+margin: 5px;
+padding: 10px;
+background-color: cornsilk;
+}
+
+Example: Flex basis
+HTML:
+    <div>
+        <h1>A</h1>
+        <h1>A</h1>
+    </div>
+CSS:
+div{
+    background-color: darkcyan;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   column-gap: 20px;
+   row-gap: 30px;
+}
+
+h1{
+margin: 5px;
+padding: 10px;
+background-color: cornsilk;
+flex-basis: 50%;
+}
+
+Flex Container Property:
+Flex, Flex-direction, Flex wrap, row-gap, column-gap,
+justify-content(x), align-item(y), align-content(y)
+
+Flex Item Property:
+Order, Flex grow, flex basis, align self.
+
+Practice: https://flexboxfroggy.com/
+
+Gradient: https://cssgradient.io/
