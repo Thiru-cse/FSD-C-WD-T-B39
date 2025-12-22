@@ -1,0 +1,15 @@
+Flex Generator: https://www.flexer.dev/
+Grid Generator: https://cssgridgenerator.io/
+
+Flex-box:
+Container(Parent): display, flex-direction, flex-wrap, justify-content, align-items, 
+                   align-content, gap, row-gap, column-gap.
+
+Items(Child): Order, flex-grow, flex-shrink, flex-basis, align-self.
+
+Grid:
+Container(Parent): display, grid-template-columns, grid-template-rows, grid-template-areas,
+                   justify-items, align-items, align-content, gap, row-gap, column-gap.
+
+Items(child): grid-column-start, grid-column-end, grid-column, grid-row-start, grid-row-end,
+              grid-row, grid-area, justify-self, place-self, align-self.
