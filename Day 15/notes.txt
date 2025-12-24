@@ -1,0 +1,110 @@
+DOM - Document Object Model
+
+Create Element - Tag+Content
+
+Step 1: Create a HTML Element
+We have to use document.createElement(elementName)
+this is an inbuilt method of document object
+which takes element name as parameter.
+var element = document.createElement("div");
+<div></div>
+
+Step 2: Add Content to the Element
+by using innerText Property.
+element.innerText = "Hello World!";
+<div>Hello World!</div>.
+
+Step 3: Appending the Element to the body
+document.body.append(element);
+
+Task: <p>This is a paragraph</p>
+
+Attribute:
+var element = document.createElement("div");
+element.setAttribute("class", "container");
+element.innerText = "Attribute Example";
+document.body.append(element);
+
+innerText vs innerHTML
+More details on HTML
+1. Content
+2. Nested Element
+an alternate to innerHTML is textContent
+innerHTML: Access the HTML content inside an element
+innerText: Access the Text content inside an element.
+
+var element = document.createElement("div");
+element.setAttribute("class", "container");
+element.innerText = "<p>Attribute Example</p>";
+document.body.append(element);
+
+Task:
+<div class="container">
+<div class="row">
+<div class="col">Hello</div>
+</div>
+</div>
+
+Example:
+var element = document.createElement("div");
+element.setAttribute("class", "container");
+
+var element1 = document.createElement("div");
+element1.setAttribute("class", "row");
+
+var element2 = document.createElement("div");
+element2.setAttribute("class", "col");
+element2.innerText = "Hello";
+
+document.body.append(element, element1, element2);
+
+document.getElementById
+this method is applicable if you have id attribute in HTML Element.
+this element must be in html file.
+Extract here in JS
+it returns the HTML Element.
+
+var element = document.getElementById("container");
+console.log(element);
+
+document.getElementByClassName
+this method is applicable if you have class attribute in the HTML Element.
+the output will be an array of element
+
+var element = document.getElementsByClassName("main");
+console.log(element);
+
+document.getElementByTagName
+
+var element = document.getElementsByTagName("p");
+console.log(element);
+
+document.querySelector
+i need to extract first occurence of the HTML
+will select the first occurence of the HTML Element
+it will return the HTML Element.
+
+var element = document.querySelector("h1");
+console.log(element);
+
+document.querySelectorAll
+i need to extract the first occurence of the HTML.
+will select all accurence of the HTML.
+it will return the output in terms of an array.
+
+var element = document.querySelectorAll("h1");
+console.log(element);
+
+HTML:
+<h1>DOM</h1>
+<button onclick="show()">Stop Screen Share</button>
+
+SCRIPT:
+function show() {
+    alert("Screen sharing stopped");
+};
+
+Task:
+HTML: label, input, button
+
+B39WDT -> FSD Developer | You're Not a Developer.
