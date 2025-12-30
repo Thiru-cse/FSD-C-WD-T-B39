@@ -1,0 +1,152 @@
+Day 16 - Event
+
+HTML:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 16 - Event</title>
+</head>
+<body>
+    <h1>Event</h1>
+    <label>E-mail</label>
+    <input type="text" id="input">
+    <button type="button" onclick="valid()">Submit</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+SCRIPT:
+function valid() {
+    var element = document.getElementById("input").value; //B39
+    console.log(element);
+    if (element == "B39WDT") {
+        alert("Welcome To the Batch!")
+    } else {
+        alert("Invalid User!")
+    }
+}
+
+Task:  Age 18 - You are Eligible to vote.
+                You are not Eligible to vote.
+
+HTML:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 16 - Event</title>
+</head>
+<body>
+    <h1>Event</h1>
+    <label>Enter Your Age!</label>
+    <input type="number" id="input">
+    <button type="button" onclick="valid()">Submit</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+SCRIPT:
+function valid() {
+    var age = document.getElementById("input").value;
+    if (age >= 18) {
+        alert("Your eligible to vote");
+    } else {
+        alert("Your not eligible to vote");
+    }
+}
+
+Example: onclick
+var element = document.getElementById("btn");
+
+element.onclick = function () {
+    console.log("First Click");
+}
+
+element.onclick = function () {
+    console.log("Second Click");
+}
+
+AddEventListener
+it takes 2 parameter
+First is the event name - click, keyup, change, resize..etc
+Second is function that has be executed.
+
+Example:
+HTML:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 16 - Event</title>
+</head>
+<body>
+    <h1>Event</h1>
+    <button id="btn">Submit</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+SCRIPT:
+var element = document.getElementById("btn");
+
+element.addEventListener("click", function () {
+  console.log("First Click");
+});
+
+element.addEventListener("click", function () {
+  console.log("Second Click");
+});
+
+
+
+
+SCRIPT:
+var button = document.createElement("button");
+button.setAttribute("type", "button"); // <button type="button">Submit</button>
+button.innerText = "Submit";
+document.body.append(button);
+
+// AddEventListener
+button.addEventListener("click", verify);
+
+function verify() {
+    console.log("Button Clicked");
+}
+
+MouseOver:
+var div = document.createElement("div");
+div.innerText = "Click";
+document.body.append(div);
+
+div.addEventListener("mouseover", () => div.style.background = "red");
+
+Confirm:
+var button = document.createElement("button");
+button.setAttribute("type", "button");
+button.innerText = "Confirm";
+document.body.append(button);
+
+button.addEventListener("click", dabba);
+
+function dabba() {
+    var res = confirm("You are not a robot");
+    console.log(res);
+}
+
+Example: Append vs AppendChild
+var div1 = document.createElement("div");
+div1.setAttribute("id", "div1");
+div1.innerText = "Hello";
+
+var div2 = document.createElement("div");
+div2.setAttribute("id", "div2");
+div2.innerText = "World";
+
+document.body.appendChild(div1, div2);
