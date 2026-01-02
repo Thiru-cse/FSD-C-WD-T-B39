@@ -81,3 +81,18 @@ res.then((data) => data.json()).then((data1) => {
 });
 
 // Print the Product Name, Desc, Price, Image.
+
+Async/Await:
+Async Function always return a promise.
+To handle promise we have await keyword.
+await keyword can be used only inside async function.
+await help us to wait until the promise get resolved.
+await replacement of the .then() method.
+
+async function rest() {
+    var res = await fetch("https://fakestoreapi.com/products/");
+    var result = await res.json();
+    console.log(result);
+}
+
+rest();
