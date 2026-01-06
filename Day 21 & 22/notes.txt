@@ -1,0 +1,120 @@
+Variable, Data Types, Array, Object, Function & types
+
+key: value
+Data Types: String
+Primitive(String, Number, Boolean, Null, Undefined) & Non-Primitive(Array[], Object{key:value,...})
+Function Types: Normal Function, Arrow Function, Function Expression, IIFE.
+
+Normal Function
+function names(parameter) {
+     console.log("Hello");
+ }
+
+ names(argument);
+
+ Function Expression
+ var john = function (a) {
+     return a;
+ }
+
+ console.log(john(10));
+
+ Arrow Function
+ var john = () => {
+     console.log("John");
+ }
+
+ john();
+
+ Conditons: if, if-else, if-elese-if, switch
+
+ Loops: for, while, do-while, for-in, for-of
+
+ Operators: Arithmetic Operator(-,+,*,/,%), Logical Operator(AND(&&), OR(||), NOT(!))
+ Comparison Operator: ==, ===, !=, <,>,>=,<=
+
+ var a = 5;
+ console.log(5==="5");
+
+ Array Methods:
+ Push, Pop, Shift, Unshift,length, indexOf, includes
+ Iteration: Map, Reduce, Filter, Some, find, findIndex, every.
+ Modify: Slice, Splice, concat
+ Order: Sort, reverse
+
+ HTML TAGS:
+ Div vs Span
+ Semantic Tag: Header, Main, Footer, Nav, Aside, Section, Article.
+ css: inline, block, class, id, tag, padding, margin, border(Box Model),
+ Position(relative, absolute, sticky, fixed, static)
+ Flexbox vs Grid
+
+ Template Literals in ES6
+var name = "Alice";
+var age = 30;
+var city = "Chennai";
+
+var message = `Hello ${name}, you are ${age} years old and you live in ${city}.`;
+console.log(message);
+
+ Array & Object Destructuring
+
+ var arr = [1, 2, 3];
+
+ var [first, second] = arr;
+
+ console.log(first);
+
+ var arr = [11, 12, 13];
+ var a = arr[0];
+ var b = arr[1];
+ var c = arr[2];
+
+ var [a, b, c] = arr;
+ console.log(a);
+
+var user = {
+    name: "John",
+    age: 28,
+    city: "Madurai"
+};
+
+ var name = user.name;
+ var age = user.age;
+
+var { name, age } = user;
+
+console.log(name);
+
+ Spread
+ var arr1 = [1, 2, 3, 4];
+ var arr2 = [...arr1, 5, 6];
+
+ console.log(arr2);
+
+ Rest Operator:
+function add(...numbers) {
+    return numbers.reduce((acc, ele)=>acc+ele, 0)
+}
+
+console.log(add(1, 2, 3, 4));
+
+TailwindCSS:
+CDN,cli
+
+DOM - Document Object Model.
+
+ var a = document.createElement('h2');
+ a.setAttribute("style", "backgroundcolor:black");
+ a.innerText = "heading";
+ document.body.append(a);
+
+ var a = document.createElement("h2");
+ a.setAttribute("style", "background-color: black; color: white;");
+ a.innerText = "heading";
+ document.body.append(a);
+
+var a = document.getElementById("sub");
+a.addEventListener("click", function () {
+    alert("Already Submitted");
+});
