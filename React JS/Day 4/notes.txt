@@ -1,0 +1,29 @@
+React Hooks:
+
+Class Component: Life Cycle Method
+                 - Mounting Phase(before every render when new props or state are received)
+                 - Updating Phase(after the component update)
+                 - Unmounting Phase(component is unmounted or destoryed)
+
+Functional Component:
+                 - Mounting Phase(useState(), useEffect())
+                 - Updating Phase(useState(), useEffect())
+                 - Unmounting Phase(useEffect());
+
+useState:
+const [state, setState] = useState(initialValue);
+state: the current value of the state(initially set to initialValue)
+setState: A function to update the state value
+initialValue: The initial value of the state(eg:0,"", or an object)
+
+useEffect:
+it is difficult to perform task like fetching data from an API, update
+
+Syntax:
+
+useEffect(()=>{
+    // Side Effect Code Here(Ex: Fetch-Mounting)
+    return ()=>{
+        // CleanUp Code Here(unmounting)
+    };
+}, [dependencies Array]) // Updating Phase
