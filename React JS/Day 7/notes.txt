@@ -1,0 +1,19 @@
+useCallback, useMemo, useRef, useReducer, Router.
+
+useMemo and useCallback: Memoize values and functions to optimize performance.
+                         Avoiding unnecessary re-render.
+
+useRef:
+- useRef to access to DOM Elements, manage Focus
+- Aref is like "Magical Pointer" that allows you to interact directly with a specific DOM Element.
+- useRef() only returns one item. it return as object called Currect(focus(), value)
+- don't trigger a re-render of the component but state managed.
+
+useReducer:
+- it is similar to the useState Hook.
+- It allows for custom state logic.
+- if you find yourself keeping track of a group of state that rely on complex logic.
+- useReducer Hook return the current state value and dispatch method.
+
+useReducer
+dispatch, ReducerAction
