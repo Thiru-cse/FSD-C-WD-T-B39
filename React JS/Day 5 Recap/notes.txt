@@ -1,0 +1,83 @@
+1. Data Types:
+- Primitive Types(String, number, boolean, undefined, null, bigInt, Symbol)
+- Non-Primitive Type(Array, Object, Function)
+
+2.Array Methods:
+push, pop, shift, unshift
+find, findIndex, some, every, includes, indexOf
+map, filter, reduce
+
+3. Operator:
+- Arithmetic Operator: +, -, *, /, %, ++, --
+- Logical Operator: &&, ||, !
+
+4. Conditions:
+- if, else, else if, Switch, Ternary Operator
+
+5. Function:
+- Function Declaration/Normal Function
+- Arrow Function
+- IIFE Function
+- Function Expression/Anonymous Function.
+
+6. Variable:
+- var, let, const
+Scope(Global, block)
+
+7. Hoisting: 
+Hoisting is the process of moving a Variable or Function to the Top of its Scope.
+Example:
+console.log(a)
+var a;
+
+8. HTML:
+Basic Tags(heading, paragraph, body, div, a, span)
+Semantic Tags(Header, Nav, Aside, Footer, Section, Article, Main)
+Tables, Form(label, input-text,email,password,range,radio,checkbox)
+
+9. CSS:
+- Selector(class, id)
+- Display(inline, block)
+- pseudo classes(link, hover, visited, active)
+- Box Model(Margin, Padding, Border)
+- Position Property(Static, Relative, Absolute, Fixed, Sticky)
+- Gradients(linear, radical)
+- Flexbox, Grid.
+
+Task 1: HTML/CSS Landing Page
+
+10. DOM
+- getElementById, getElementByTagName, getElementByClassName, querySelector, querySelectorAll
+- createElement, innerText, innerHTML, style.color, setAttribute, append, appendChild
+- Event(onClick, addEventListener)
+- Event Type: click, submit, input, change, keydown, keyup.
+
+Task 2: Flip Card
+
+11. Advance JS:
+- Sync/Async
+- Call stack, Web API, Event Queue, Event loop.
+- Callback, Callback Hell
+- Promise, Promise Chaining, Promise All
+- Async/Await
+- Spread operator, Rest Operator
+
+Task 3: Todo App
+
+12. React JS
+- Setup Vite
+- Folder Structure
+- Component
+- Props(string, array, object, Array of Object)
+- Component LifeCycle:
+  Mounting Phase: called before every render when the new props or state are received.(useState, useEffect)
+  Updating Phase: after the Component update.(useState, useEffect)
+  Unmounting Phase: immediately befor a component is unmounted or destoryed.(useEffect)
+- useState: Allows Functional Components to manage state.
+   const[state, setState]=useState(INITIAL VALUE)
+   state: the current value of the state(initial set to initial value)
+   setState: Function to update the state value, causing the component to re-render.
+   initial value: The initial value of the state(eg: 0, "", or object)
+- useEffect: it is difficult to perform task like fetching data from an API.
+
+Task 4: Add to Cart(FakeStoreApi - useState, useEffect )
