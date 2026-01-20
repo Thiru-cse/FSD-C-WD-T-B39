@@ -1,0 +1,6 @@
+React Forms:
+- Forms are used to collect user input, such as text fields, checkbox, radio button, and so on.
+  Handling forms in React is a bit different than regular HTML forms because React uses the state to 
+  manage form data, which allows for real time control over user input.
+
+Task: username, password, email, gender(select), submit button.
