@@ -1,0 +1,14 @@
+Redux: Group of State Transition
+- State Management Library
+- It provides a centralized way to manage the state of your application 
+- To handle complex state Management
+
+Steps For Creating Redux:
+1. CreateSlice -> {createSlice} from '@redux/toolkit'
+         name, initialState, reducers(3 things important)
+2. Creating Store -> {configureStore} -> '@redux/toolkit'
+3. Provider -> {Provider} from 'react-redux' and pass store as property
+4. UseSelector() -> {UseSelector} from 'react-redux' - Fetch Purpose
+5. UseDispatch() -> {UseDispatch} from 'react-redux' - update purpose
+
+npm i react-redux @reduxjs/toolkit
