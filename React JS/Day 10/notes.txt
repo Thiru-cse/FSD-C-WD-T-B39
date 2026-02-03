@@ -1,0 +1,17 @@
+Context API
+- Global State Management
+- Avoid Props Drilling
+- Performance Optimization
+
+Context, Provider, useContext:
+
+createContext():
+               A context is created using createContext function. 
+               It returns an object with a Provider and a Consume.
+
+Provider:
+        The Provider component is responsible for providing the context value to its children.
+        It takes a value prop, which is data you want to share.
+
+useContext():
+             It is used to consume a react context within a functional component.
