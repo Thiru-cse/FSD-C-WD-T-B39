@@ -1,0 +1,1 @@
+// http://localhost:4000/api/product - GET, POST, PUT, DELETE
