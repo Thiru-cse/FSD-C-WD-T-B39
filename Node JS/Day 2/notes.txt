@@ -1,0 +1,21 @@
+What is express 
+API methods - GET, POST, PUT, DELETE
+Request & response objects 
+Url  &  Query parameters
+
+Express:
+is a popular and web application framework for Node.js. 
+It is designed to simplify the process of building robust and scalable web applications and APIs by providing 
+a set of essential features and tools.           
+
+Express.js is known for its simplicity, flexibility, and performance, making it a preferred choice for many developers.
+Main features:
+·      Middleware - (authentication, authorization)
+·      Routing
+·      HTTP Utility Methods
+·      Error Handling
+
+
+CRUD - Examples (API methods - GET, POST, PUT, DELETE
+Request & response objects 
+Url  &  Query parameters)
